@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dermatology System</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Open+Sans">
+        <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/assets/css/buttons.css">
+        <link rel="stylesheet" href="static/assets/css/style.css">
+        <link rel="stylesheet" href="static/assets/css/dropzone.css">
+        <link rel="stylesheet" href="static/assets/css/media-queries.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="static/assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="static/assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body style="background-color: rgba(0, 0, 0, 0.8);">
+      <div class="header">
+        <img id="un" src="static/assets/img/unun.png">
+        <img id="un1" src="static/assets/img/un1.gif">
+       <h1>Dermatology Diagnosis System (DDS)</h1>
+        
+        </div>
+        <!-- Top content -->
+        <div class="top-content">
+
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            
+                            <div class="description" style="color:white">
+                                Please uploading a picture of your affected skin into the box below.
+                                <img src="static/assets/img/upload-topsima.png" style="width: 4%;height: 4%"><br>
+                        </div>
+
+                            <div id="dropzone"  >
+                        <form action="upload" class="dropzone" id="demo-upload" style="border: none;width: 400px;">
+                        </form>
+                      </div>
+                      <form action="/home" style = "text-align:left; color:#000;">
+                        <input type="submit" value="Diagnose " id="bt"/>
+                        </form>
+                        </div>
+
+                        
+                        
+                   <div id="user_image" style="height: 250px;">
+
+                    <img src='{{xx}}' style="width: 100%;height: 250px;background-color: black">
+ 
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="data">
+                        <center>
+                        <label>{{dic}}</label>
+                        </center>
+                  </div>
+        </div>
+
+
+        <!-- Footer -->
+      
+
+        <!-- Javascript -->
+        <script src="static/assets/js/jquery-1.10.2.min.js"></script>
+        <script src="static/assets/js/jquery.backstretch.min.js"></script>
+        <script src="static/assets/js/retina-1.1.0.min.js"></script>
+        <script src="static/assets/js/dropzone.js"></script>
+                              
+ <style type="text/css">
+.header {
+    overflow: hidden;
+    padding: 0%;
+    height: 90px;
+    background-color: black;
+    
+}
+#un{
+    
+    float: left;
+    margin-left: 3%;
+    margin-top: 10px;
+    padding: 0px;
+    height: 60px;
+    width: 50px;
+}
+#un1{
+   float: right;
+    margin-right: 3%;
+    margin-top: 10px;
+    padding: 0px;
+    height: 60px;
+    width: 50px;
+}
+.header h1 {
+
+    text-align: center;
+    margin: auto;
+    color: white;
+    padding-top: 1%;
+
+}
+.dropzone{
+
+   float: left;
+  }
+#bt{
+  color: #2DCC70;
+  height:40px;
+  width: 120px;
+  border: solid 3px #2DCC70;
+  cursor: progress;
+  font-size: 20px;
+  margin: 40px;
+  margin-top: 120px;
+  float: left;
+  margin-left: 80px;
+   font-size: 22px;
+    font-weight: bolder;
+
+}
+.container #user_image{
+
+  float: left;
+  width: 300px;
+  margin-left: 80px;
+  text-align: center;
+  height: 300px
+
+}
+#data{
+
+  width: 100%;
+  margin-top: 30px;
+  font-size: 18px;
+
+}
+                        </style>
+  
+    </body>
+
+</html>
